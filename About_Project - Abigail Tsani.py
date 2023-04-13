@@ -1,6 +1,6 @@
 
 import streamlit as st
-from PIL import Image
+# from PIL import Image
 
 st.write("""
     <style>
@@ -25,8 +25,8 @@ st.write("""
 """, unsafe_allow_html=True)
 
 st.title("Taxi Trip Duration Prediction")
-img = Image.open(r"./image/taxi.jpg")
-st.image(img, use_column_width = True)
+# img = Image.open(r"./image/taxi.jpg")
+# st.image(img, use_column_width = True)
 
 #---Overview---
 st.header("Overview")
@@ -63,10 +63,10 @@ st.write(f"<div style='text-align:justify'>{background_text}</div>", unsafe_allo
 #--- Current State---
 st.subheader("Current State")
 st.write("**Average Daily Trip Volume Proportion by Sector**")
-image1 = Image.open(r"./image/taxi_problem1.PNG")
-legend1 = Image.open(r"./image/legend1.PNG")
-st.image(image1, use_column_width = True)
-st.image(legend1)
+# image1 = Image.open(r"./image/taxi_problem1.PNG")
+# legend1 = Image.open(r"./image/legend1.PNG")
+# st.image(image1, use_column_width = True)
+# st.image(legend1)
 problem_text1 = """
 There is a decrease in the proportion of users of yellow medallion taxis and 
 green street hail livery, otherwise there has been an increase in 
@@ -78,8 +78,8 @@ More clearly can be seen in the image below regarding the trend of use of every 
 st.write(f"<div style='text-align:justify'>{problem_text1}</div>", unsafe_allow_html=True)
 
 st.write("**Trip Counts Per Day**")
-image2 = Image.open(r"./image/taxi_problem2.PNG")
-st.image(image2, use_column_width = True)
+# image2 = Image.open(r"./image/taxi_problem2.PNG")
+# st.image(image2, use_column_width = True)
 problem_text2 = """
 There has been a decrease in the use of yellow medallion taxis, 
 and conversely there has been a very significant increase in 
